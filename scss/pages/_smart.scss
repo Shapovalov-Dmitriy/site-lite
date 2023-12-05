@@ -1,0 +1,23 @@
+.orange {
+    padding: 45px 0;
+    background-color: $accent-color;
+    // .orange__col-left
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__col-left {
+        *:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .orange__text
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        color: $white-color;
+    }
+}

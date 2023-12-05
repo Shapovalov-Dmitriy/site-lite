@@ -1,15 +1,39 @@
 .button {
     border: none;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    color: $dark-color;
+    transition: all 0.3s;
+    cursor: pointer;
+    .icon-email {
+        margin-right: 15px;
+    }
+    &:hover {
+        background-color: #000;
+        color: $white-color;
+    }
+    &:active {
+        background-color: $text-color;
+    }
 }
 
 .title {
     text-align: center;
     color: $title-color;
-    font-family: Oswald;
+    font-family: "Oswald", sans-serif;
     font-size: 36px;
     font-weight: 500;
     text-transform: uppercase;
     &__projects {
         margin-bottom: 60px;
+    }
+    &__orange {
+        font-size: 48px;
+        font-weight: 700;
+        color: $white-color;
     }
 }
