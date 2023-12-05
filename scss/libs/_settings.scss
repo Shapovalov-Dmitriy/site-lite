@@ -1,3 +1,15 @@
 .button {
     border: none;
 }
+
+.title {
+    text-align: center;
+    color: $title-color;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &__projects {
+        margin-bottom: 60px;
+    }
+}
