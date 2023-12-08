@@ -142,6 +142,9 @@ body {
 .title__feed {
   margin-bottom: 64px;
 }
+.title__contacts {
+  margin-bottom: 60px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -548,12 +551,22 @@ body {
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
   padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .feed__body {
   padding: 79px 30px 38px;
   background-color: #f7f7f7;
   margin-bottom: 30px;
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .feed__body::before {
   content: "";
@@ -577,5 +590,49 @@ body {
   letter-spacing: 0.42px;
 }
 .feed__text span {
+  color: #f7654a;
+}
+
+.contacts {
+  padding: 100px 0 150px;
+  position: relative;
+}
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 -15px;
+}
+.contacts__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 0 15px;
+}
+.contacts__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #999999;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.contacts__body {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contacts__body address {
+  font-style: normal;
+}
+.contacts__body a {
+  display: block;
+}
+.contacts__email {
   color: #f7654a;
 }

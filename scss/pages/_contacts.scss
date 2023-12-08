@@ -1,0 +1,75 @@
+.contacts {
+    padding: 100px 0 150px;
+    position: relative;
+    // .contacts__list
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 -15px;
+    }
+
+    // .contacts__item
+
+    &__item {
+        flex: 1 1 25%;
+        padding: 0 15px;
+    }
+
+    // .contacts__title
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $text-color;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        text-align: center;
+        // .contacts__title_location
+
+        &_location {
+        }
+
+        // .contacts__title_phone
+
+        &_phone {
+        }
+
+        // .contacts__title_time
+
+        &_time {
+        }
+
+        // .contacts__title_email
+
+        &_email {
+        }
+    }
+
+    // .contacts__body
+
+    &__body {
+        font-size: 24px;
+        font-weight: 500;
+        color: $dark-color;
+        text-transform: uppercase;
+        text-align: center;
+        address {
+            font-style: normal;
+        }
+        a {
+            display: block;
+        }
+    }
+
+    // .contacts__phone
+
+    &__phone {
+    }
+
+    // .contacts__email
+
+    &__email {
+        color: $accent-color;
+    }
+}

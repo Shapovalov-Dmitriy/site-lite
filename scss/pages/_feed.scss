@@ -10,6 +10,8 @@
     &__item {
         flex: 1 1 33.333%;
         padding: 0 15px;
+        display: flex;
+        flex-direction: column;
     }
 
     // .feed__body
@@ -19,6 +21,7 @@
         background-color: $block-bg;
         margin-bottom: 30px;
         position: relative;
+        flex: 1 1 auto;
         &::before {
             content: "";
             position: absolute;
