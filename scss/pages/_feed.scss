@@ -1,0 +1,56 @@
+.feed {
+    padding: 150px 0;
+    &__list {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    // .feed__item
+
+    &__item {
+        flex: 1 1 33.333%;
+        padding: 0 15px;
+    }
+
+    // .feed__body
+
+    &__body {
+        padding: 79px 30px 38px;
+        background-color: $block-bg;
+        margin-bottom: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            background: url("../../img/feedbacks/quote.svg") center / cover
+                no-repeat;
+            width: 35px;
+            height: 30px;
+        }
+    }
+
+    // .feed__descr
+
+    &__descr {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    // .feed__text
+
+    &__text {
+        font-size: 21px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $dark-color;
+        letter-spacing: 0.42px;
+        span {
+            color: $accent-color;
+        }
+    }
+}
+.title {
+}
