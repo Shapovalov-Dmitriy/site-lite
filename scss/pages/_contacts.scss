@@ -14,6 +14,32 @@
     &__item {
         flex: 1 1 25%;
         padding: 0 15px;
+        padding-top: 60px;
+        &_location {
+            background: url("../../img/contacts/location.svg") top center / 49px
+                49px no-repeat;
+        }
+
+        // .contacts__title_phone
+
+        &_phone {
+            background: url("../../img/contacts/phone.svg") top center / 49px
+                49px no-repeat;
+        }
+
+        // .contacts__title_time
+
+        &_time {
+            background: url("../../img/contacts/clock.svg") top center / 49px
+                49px no-repeat;
+        }
+
+        // .contacts__title_email
+
+        &_email {
+            background: url("../../img/contacts/email.svg") top center / 49px
+                49px no-repeat;
+        }
     }
 
     // .contacts__title
@@ -26,24 +52,6 @@
         margin-bottom: 25px;
         text-align: center;
         // .contacts__title_location
-
-        &_location {
-        }
-
-        // .contacts__title_phone
-
-        &_phone {
-        }
-
-        // .contacts__title_time
-
-        &_time {
-        }
-
-        // .contacts__title_email
-
-        &_email {
-        }
     }
 
     // .contacts__body

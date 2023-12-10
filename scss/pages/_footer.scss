@@ -1,0 +1,13 @@
+.footer {
+    padding: 30px 0;
+    background-color: $title-color;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 400;
+    }
+}

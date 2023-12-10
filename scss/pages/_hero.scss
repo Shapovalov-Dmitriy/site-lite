@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    padding: 192px 0 100px;
+    padding: 192px 0 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,50 +25,5 @@
         font-weight: 400;
         text-transform: uppercase;
         color: $white-color;
-    }
-}
-.years {
-    transform: translateY(250px);
-    background-color: $block-bg;
-    padding: 57px 130px;
-}
-.year {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    // .year__item
-
-    &__item {
-        flex: 0 0 190px;
-    }
-}
-.item-year {
-    text-align: center;
-    // .item-year__num
-
-    &__num {
-        font-size: 72px;
-        color: $accent-color;
-        font-weight: 500;
-        margin-bottom: 30px;
-    }
-
-    // .item-year__descr
-
-    &__descr {
-        font-size: 36px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: $title-color;
-        margin-bottom: 15px;
-    }
-
-    // .item-year__text
-
-    &__text {
-        font-size: 18px;
-        font-weight: 500;
-        color: $text-color;
     }
 }

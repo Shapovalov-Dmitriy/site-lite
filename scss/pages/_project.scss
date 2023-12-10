@@ -1,5 +1,6 @@
 .projects {
-    padding: 250px 0 150px;
+    padding: 0px 0 150px;
+    position: relative;
     // .projects__cards
 
     &__cards {
@@ -12,6 +13,52 @@
     &__card {
         padding: 0 15px;
         flex: 0 0 33.333%;
+    }
+}
+
+.years {
+    transform: translateY(-140px);
+    background-color: $block-bg;
+    padding: 57px 130px;
+}
+.year {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    // .year__item
+
+    &__item {
+        flex: 0 0 190px;
+    }
+}
+.item-year {
+    text-align: center;
+    // .item-year__num
+
+    &__num {
+        font-size: 72px;
+        color: $accent-color;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    // .item-year__descr
+
+    &__descr {
+        font-size: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $title-color;
+        margin-bottom: 15px;
+    }
+
+    // .item-year__text
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        color: $text-color;
     }
 }
 

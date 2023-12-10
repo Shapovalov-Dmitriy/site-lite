@@ -242,7 +242,7 @@ body {
 
 .hero {
   position: relative;
-  padding: 192px 0 100px;
+  padding: 192px 0 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -265,10 +265,27 @@ body {
   color: #ffffff;
 }
 
+.projects {
+  padding: 0px 0 150px;
+  position: relative;
+}
+.projects__cards {
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects__card {
+  padding: 0 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+
 .years {
-  -webkit-transform: translateY(250px);
-      -ms-transform: translateY(250px);
-          transform: translateY(250px);
+  -webkit-transform: translateY(-140px);
+      -ms-transform: translateY(-140px);
+          transform: translateY(-140px);
   background-color: #f7f7f7;
   padding: 57px 130px;
 }
@@ -311,22 +328,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #999999;
-}
-
-.projects {
-  padding: 250px 0 150px;
-}
-.projects__cards {
-  margin: 0 -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.projects__card {
-  padding: 0 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333%;
-          flex: 0 0 33.333%;
 }
 
 .card-projects {
@@ -611,6 +612,19 @@ body {
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   padding: 0 15px;
+  padding-top: 60px;
+}
+.contacts__item_location {
+  background: url("../../img/contacts/location.svg") top center/49px 49px no-repeat;
+}
+.contacts__item_phone {
+  background: url("../../img/contacts/phone.svg") top center/49px 49px no-repeat;
+}
+.contacts__item_time {
+  background: url("../../img/contacts/clock.svg") top center/49px 49px no-repeat;
+}
+.contacts__item_email {
+  background: url("../../img/contacts/email.svg") top center/49px 49px no-repeat;
 }
 .contacts__title {
   font-size: 24px;
@@ -635,4 +649,23 @@ body {
 }
 .contacts__email {
   color: #f7654a;
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: #404149;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
 }
