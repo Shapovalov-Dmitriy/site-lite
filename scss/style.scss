@@ -1,20 +1,22 @@
-@import "base/reset";
-@import "base/fonts";
-// \\\\\\\\\\\\\\\\\\\\\\\\\\\
-@import "libs/variables";
-@import "libs/settings";
-@import "libs/icons";
+// /////////// base ////////////////
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/dark-theme';
+// \\\\\\\\\\\\ libs \\\\\\\\\\\\\\\
+@import 'libs/variables';
+@import 'libs/settings';
+@import 'libs/icons';
 
 // /////////// pages ///////////////
-@import "pages/header";
-@import "pages/navigation";
-@import "pages/hero";
-@import "pages/project";
-@import "pages/smart";
-@import "pages/about";
-@import "pages/pattern";
-@import "pages/faq";
-@import "pages/partners";
-@import "pages/feed";
-@import "pages/contacts";
-@import "pages/footer";
+@import 'pages/header';
+@import 'pages/navigation';
+@import 'pages/hero';
+@import 'pages/project';
+@import 'pages/smart';
+@import 'pages/about';
+@import 'pages/pattern';
+@import 'pages/faq';
+@import 'pages/partners';
+@import 'pages/feed';
+@import 'pages/contacts';
+@import 'pages/footer';

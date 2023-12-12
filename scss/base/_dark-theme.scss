@@ -1,0 +1,20 @@
+.dark {
+    background-color: #333;
+}
+.dark .title {
+    color: #fff;
+}
+.dark .card-projects__body {
+    background-color: #ffffff;
+}
+.dark .years {
+    background-color: #555;
+    & .item-year {
+        &__descr {
+            color: #000;
+        }
+        &__text {
+            color: #fff;
+        }
+    }
+}

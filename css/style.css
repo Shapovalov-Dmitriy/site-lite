@@ -86,6 +86,28 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+.dark {
+  background-color: #333;
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.dark .card-projects__body {
+  background-color: #ffffff;
+}
+
+.dark .years {
+  background-color: #555;
+}
+.dark .years .item-year__descr {
+  color: #000;
+}
+.dark .years .item-year__text {
+  color: #fff;
+}
+
 .button {
   border: none;
   padding: 14px 30px;

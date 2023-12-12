@@ -1,6 +1,10 @@
-"use strict";
-const burger = document.querySelector(".header__btn"),
-    nav = document.querySelector(".navigation");
+'use strict';
+
+// ////////  menu /////////
+
+const burger = document.querySelector('.header__btn'),
+    nav = document.querySelector('.navigation');
+
 /*
 //  Способ №1
 if (burger) {
@@ -45,10 +49,44 @@ if (burger) {
 */
 
 // Способ №5 (делегирование)
-document.addEventListener("click", (e) => {
+document.addEventListener('click', (e) => {
     const target = e.target;
 
-    if (target.classList.contains("header__btn")) {
-        nav.classList.toggle("menu-active");
+    if (target.classList.contains('header__btn')) {
+        nav.classList.toggle('menu-active');
     }
 });
+
+// //////////наведение мышью ///////////
+
+const logo = document.querySelector('.header__logo'),
+    text = document.querySelector('.hero__title');
+if (logo) {
+    logo.addEventListener('mouseover', () => {
+        // При наведениимышью на логотип, меняем текст элемента на ПОЛУЧИЛОСЬ!!!
+        text.innerHTML = 'ПОЛУЧИЛОСЬ!!!';
+    });
+}
+
+if (logo) {
+    logo.addEventListener('mouseout', () => {
+        // Когда убираем мышь с логотипа, текст элемента меняется на РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ
+        text.innerHTML = 'РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ';
+    });
+}
+
+// \\\\\\\\\\ темная тема //////////////
+const body = document.querySelector('body'),
+    themeBtn = document.querySelector('.btn-theme');
+
+if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+        body.classList.toggle('dark'); // Переключаем класс dark на body
+        if (body.classList.contains('dark')) {
+            // Проверяем, если body имеет класс dark
+            themeBtn.innerHTML = 'Светлая тема'; // меняем текст в кнопке на Светлая тема
+        } else {
+            themeBtn.innerHTML = 'Темная тема'; // Если класса нет, меняем текст Темная тема
+        }
+    });
+}
