@@ -3,44 +3,72 @@
     // .about__list
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -15px;
-        row-gap: 30px;
+        &.cube {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            row-gap: 30px;
+
+            & .item-about {
+                display: flex;
+                flex-direction: column;
+                background-color: $block-bg;
+                padding: 50px 86px;
+                text-align: center;
+                // .item-about__image
+
+                &__image {
+                    margin: 0 auto 30px auto;
+                    flex: 0 0 40px;
+                    width: 60px;
+                }
+
+                // .item-about__descr
+
+                &__descr {
+                    flex: 1 1 auto;
+                    font-size: 21px;
+                    font-weight: 500;
+                    color: $title-color;
+                    max-width: 172px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.42px;
+                }
+            }
+        }
+        &.line {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            & .item-about {
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+                background-color: $block-bg;
+                padding: 50px;
+                &__image {
+                    flex: 0 0 40px;
+                }
+
+                // .item-about__descr
+
+                &__descr {
+                    flex: 1 1 auto;
+                    font-size: 21px;
+                    font-weight: 500;
+                    color: $title-color;
+                    max-width: 172px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.42px;
+                }
+            }
+        }
     }
-
-    // .about__item
-
     &__item {
         flex: 1 1 33.333%;
         padding: 0 15px;
         position: relative;
     }
-}
 
-.item-about {
-    display: flex;
-    flex-direction: column;
-    background-color: $block-bg;
-    padding: 50px 86px;
-    text-align: center;
-    // .item-about__image
-
-    &__image {
-        margin: 0 auto 30px auto;
-        flex: 0 0 40px;
-        width: 60px;
-    }
-
-    // .item-about__descr
-
-    &__descr {
-        flex: 1 1 auto;
-        font-size: 21px;
-        font-weight: 500;
-        color: $title-color;
-        max-width: 172px;
-        text-transform: uppercase;
-        letter-spacing: 0.42px;
-    }
+    // .about__item
 }

@@ -90,3 +90,35 @@ if (themeBtn) {
         }
     });
 }
+
+// ///////////// Перестроение карточек ///////////////
+/*
+Задача:
+1) Найти кнопку cube
+2) Найти кнопку line
+3) Найти элемент li с классом .about__list
+4) При нажатии кнопки cube вешаем класс cube на елемент с классом .about__list и удаляем класс line если есть
+5) При нажатии кнопки line вешаем класс line на елемент с классом .about__list и удаляем класс cube если есть
+*/
+
+const aboutList = document.querySelector('.about__list'),
+    cubeBtn = document.querySelector('.about__cube'),
+    lineBtn = document.querySelector('.about__line'),
+    about = document.querySelector('.about');
+
+if (cubeBtn) {
+    cubeBtn.addEventListener('click', () => {
+        if (aboutList.classList.contains('line')) {
+            aboutList.classList.remove('line');
+            aboutList.classList.add('cube');
+        }
+    });
+}
+if (lineBtn) {
+    lineBtn.addEventListener('click', () => {
+        if (aboutList.classList.contains('cube')) {
+            aboutList.classList.remove('cube');
+            aboutList.classList.add('line');
+        }
+    });
+}
