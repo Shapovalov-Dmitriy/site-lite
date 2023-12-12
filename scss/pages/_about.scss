@@ -8,7 +8,11 @@
             flex-wrap: wrap;
             margin: 0 -15px;
             row-gap: 30px;
-
+            & .about__item {
+                flex: 1 1 33.333%;
+                padding: 0 15px;
+                position: relative;
+            }
             & .item-about {
                 display: flex;
                 flex-direction: column;
@@ -62,12 +66,12 @@
                     letter-spacing: 0.42px;
                 }
             }
+            &__item {
+                flex: 1 1 33.333%;
+                padding: 0;
+                position: relative;
+            }
         }
-    }
-    &__item {
-        flex: 1 1 33.333%;
-        padding: 0 15px;
-        position: relative;
     }
 
     // .about__item

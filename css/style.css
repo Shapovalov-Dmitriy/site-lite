@@ -37,6 +37,7 @@ body {
   color: #999;
   background-color: #fff;
   min-width: 320px;
+  position: relative;
 }
 
 [class*=__container] {
@@ -486,6 +487,13 @@ body {
   margin: 0 -15px;
   row-gap: 30px;
 }
+.about__list.cube .about__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  padding: 0 15px;
+  position: relative;
+}
 .about__list.cube .item-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,11 +563,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.42px;
 }
-.about__item {
+.about__list.line__item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
-  padding: 0 15px;
+  padding: 0;
   position: relative;
 }
 

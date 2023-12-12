@@ -105,7 +105,8 @@ const aboutList = document.querySelector('.about__list'),
     cubeBtn = document.querySelector('.about__cube'),
     lineBtn = document.querySelector('.about__line'),
     about = document.querySelector('.about');
-
+/*
+// Способ №1 (топорный)
 if (cubeBtn) {
     cubeBtn.addEventListener('click', () => {
         if (aboutList.classList.contains('line')) {
@@ -119,6 +120,35 @@ if (lineBtn) {
         if (aboutList.classList.contains('cube')) {
             aboutList.classList.remove('cube');
             aboutList.classList.add('line');
+        }
+    });
+}
+*/
+// \\\\\\\\\\\\\\ Используем делегирование //////////////
+about.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('about__cube')) {
+        aboutList.classList.remove('line');
+        aboutList.classList.add('cube');
+    } else if (target.classList.contains('about__line')) {
+        aboutList.classList.remove('cube');
+        aboutList.classList.add('line');
+    }
+});
+
+//  //////////// переключение сетки одной кнопкой///////////////
+const rerange = document.querySelector('.about__rerange');
+
+if (rerange) {
+    rerange.addEventListener('click', () => {
+        if (aboutList.classList.contains('cube')) {
+            aboutList.classList.remove('cube');
+            aboutList.classList.add('line');
+            rerange.innerHTML = 'Линия';
+        } else {
+            aboutList.classList.remove('line');
+            aboutList.classList.add('cube');
+            rerange.innerHTML = 'Клетка';
         }
     });
 }

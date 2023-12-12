@@ -24,16 +24,17 @@ a {
     text-decoration: none;
 }
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
     color: #999;
     background-color: #fff;
     min-width: 320px;
+    position: relative;
 }
 
-[class*="__container"] {
+[class*='__container'] {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
