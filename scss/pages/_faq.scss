@@ -13,7 +13,7 @@
     &__item {
         max-width: 730px;
         *:not(:last-child) {
-            margin: 30px 0;
+            margin-top: 30px;
         }
     }
 
@@ -27,6 +27,7 @@
         color: $accent-color;
         position: relative;
         padding-left: 30px;
+        transition: all 0.5s;
         &::before {
             content: "";
             position: absolute;
@@ -36,14 +37,33 @@
             height: 15px;
             background: url("../../icons/arrow.svg") center / cover no-repeat;
         }
+        &.active + p {
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
+        }
+        &.active::before {
+            transform: rotate(90deg);
+        }
     }
 
     // .faq__descr
 
     &__descr {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
         font-weight: 400;
-        // display: none;
+        padding: 10px 10px 10px 0px;
+        transition: visibility 0.3s ease 0s, opacity 0.2s ease 0s,
+            height 0.2s ease 0s;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
+        }
     }
 }

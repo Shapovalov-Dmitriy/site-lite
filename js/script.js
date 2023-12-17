@@ -100,11 +100,12 @@ if (themeBtn) {
 4) При нажатии кнопки cube вешаем класс cube на елемент с классом .about__list и удаляем класс line если есть
 5) При нажатии кнопки line вешаем класс line на елемент с классом .about__list и удаляем класс cube если есть
 */
-
+/*
 const aboutList = document.querySelector('.about__list'),
     cubeBtn = document.querySelector('.about__cube'),
     lineBtn = document.querySelector('.about__line'),
     about = document.querySelector('.about');
+    */
 /*
 // Способ №1 (топорный)
 if (cubeBtn) {
@@ -124,6 +125,7 @@ if (lineBtn) {
     });
 }
 */
+/*
 // \\\\\\\\\\\\\\ Используем делегирование //////////////
 about.addEventListener('click', (e) => {
     const target = e.target;
@@ -152,3 +154,25 @@ if (rerange) {
         }
     });
 }
+*/
+
+// ///////////// faq (аккардион)//////////////
+const faqList = document.querySelector('.faq__list');
+
+faqList.addEventListener('click', liteSpoller);
+function liteSpoller(e) {
+    // const target = e.target;
+    // Способ 1
+    /*
+    target.nextElementSibling.classList.toggle('active');
+    */
+    // Способ 2
+    /*
+    const parentElement = target.parentElement.querySelector('.faq__descr');
+    if (parentElement) {
+        parentElement.classList.toggle('active');
+    }
+     */
+
+}
+
